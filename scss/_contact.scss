@@ -1,0 +1,93 @@
+#map {
+  height: 700px;
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+
+  &__form {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 380px;
+    left: 26%;
+    z-index: 25;
+    width: 770px;
+    height: 450px;
+    box-shadow: 0px -4px 30px 0 rgba(133, 133, 133, 0.2);
+    background-image: linear-gradient(49deg, rgba(242,245,249,0.85) 0%, rgba(246,248,249,0.8) 92%), url(../assets/image/Form-bg.jpg);
+  }
+
+  &__line {
+    @include maintitleLine($color__main_dark-blue);
+  }
+
+  &__maintitle {
+    @include maintitle($color__main_dark-blue);
+    padding-top: 48px;
+    margin-bottom: 47px;
+  }
+}
+
+.contact__form_item {
+  display: flex;
+  padding: 0px 20px 20px 20px;
+}
+
+.contact__form_adres {
+  font-family: $font_GothamMedium;
+  font-size: 18px;
+  line-height: 1.89;
+  text-align: left;
+  color: $color__main_dark-blue;
+  width: 50%;
+  margin: 0px 0px 0px 36px;
+}
+
+.contact__form_adres .fas,
+.far {
+  margin: 17px 0px 25px 0px ;
+  color: $color__main_violett;
+}
+
+input[type="text"] {
+  width: 310px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $color__main_dark-blue;
+  opacity: 0.5;
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+  opacity: 1;
+
+}
+
+input[type="text"]:hover {
+  opacity: 1;
+}
+
+.registerbtn {
+  @include button;
+  margin: 11px 0px 10px 145px;
+    width: 140px;
+    height: 50px;
+
+
+  &:hover {
+    transform: scale(0.95);
+    background-color: $color__main_dark-blue;
+    background-image: none;
+    color: $color__main_white;
+  }
+}
+
+.contact__form_action {
+  width: 40%;
+  margin: 0px 0px 10px 0px;
+}

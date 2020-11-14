@@ -1,0 +1,199 @@
+.header {
+  height: 800px;
+  position: relative;
+
+  &__gradient {
+    width: 100vw;
+    height: 800px;
+    background: linear-gradient(
+      20deg,
+      rgba(14, 141, 235, 0.7346938775510203) 3%,
+      rgba(132, 103, 233, 1) 74%
+    );
+    background-size: auto auto, cover;
+    z-index: 15;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    color: $color__main_white;
+    z-index: 16;
+  }
+
+  &__title {
+    font-family: $font_GothamBold;
+    font-size: 80px;
+    line-height: 0.28;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 335px;
+    margin-left: -16px;
+
+  }
+
+  &__subtitle {
+    font-family: $font_GothamMedium;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 5.4px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 56px;
+    margin-left: -18px;
+  }
+
+  &__dot {
+    background-color: transparent;
+    border: 1px solid $color__main_white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px -36px 0px 20px;
+    outline: none;
+  }
+
+  &__navy {
+    display: flex;
+  }
+
+  &__social {
+    cursor: pointer;
+    display: flex;
+    margin: 9px 0px 0px -117px;
+
+    & li {
+      margin: 0px 10px 0px 10px;
+      :hover{
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__facebook {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/icon/css_sprites.png) -236px -130px;
+  }
+  &__twitter {
+    width: 41px;
+    height: 40px;
+    background: url(../assets/icon/css_sprites.png) -71px -136px;
+  }
+
+  &__instagram {
+    width: 41px;
+    height: 40px;
+    background: url(../assets/icon/css_sprites.png) -10px -136px;
+  }
+
+  &__navy_wrapper {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    z-index: 20;
+  }
+
+  &__menu {
+    display: flex;
+    margin: 0px 200px 0px 0px;
+  }
+
+  &__menu li {
+    display: flex;
+    margin: 21px 27px 0px 26px;
+  }
+
+  
+  &__menu a {
+    text-decoration: none;
+    font-family: $font_GothamBook;
+    font-size: 14px;
+    font-weight: normal;
+    color: $color__main_white;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 43px;
+  }
+
+  &__menu li:hover .header__dot {
+    background-color: $color__main_white;
+    border: 1px solid $color__main_white;
+  }
+
+  &__logo {
+    margin: 0px 50px 0px 165px;
+  }
+}
+
+.arrow_down {
+  width: 40px;
+  height: 40px;
+  background: url(../assets/icon/css_sprites.png) -132px -136px;
+  cursor: pointer;
+  margin-top: 228px;
+  margin-left: 408px;
+}
+
+// sliderbig block
+
+.slick-list {
+  overflow: hidden;
+}
+
+.sliderbig {
+  position: relative;
+
+  &__item {
+    text-align: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sliderbig .slick-dots {
+  cursor: pointer;
+  list-style: none;
+  position: absolute;
+  top: 259px;
+  right: -86px;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+
+.sliderbig .slick-dots li {
+  margin: 29px 135px 1px 0px;
+}
+
+.sliderbig .slick-dots button {
+  font-size: 0;
+  background-color: transparent;
+  border: 1px solid $color__main_white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0px 0px;
+  outline: none;
+}
+
+.sliderbig .slick-dots li.slick-active button {
+  background-color: $color__main_white;
+  border: 1px solid $color__main_white;
+}
+
+#myBtn {
+  @include buttonTop($color__main_dark-blue);
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  background-color: $color__main_dark-blue;
+  color: $color__main_white;
+}

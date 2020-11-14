@@ -1,0 +1,55 @@
+@mixin button {
+  width: 190px;
+  height: 50px;
+  font-size: 14px;
+  background-color: transparent;
+  color: $color__main_dark-blue;
+  font-family: $font_GothamMedium;
+  text-align: center;
+  transition-duration: 0.4s;
+  border: 1px solid $color__main_dark-blue;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 1.57;
+  margin: 36px 0px 60px 0px;
+}
+
+@mixin buttonTop($colorbtn) {
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  background-color: transparent;
+  color: $colorbtn;
+  font-family: $font_GothamMedium;
+  text-align: center;
+  transition-duration: 0.4s;
+  border: 1px solid $colorbtn;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 1.57;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}
+
+@mixin maintitle($title-color) {
+  font-family: $font_GothamBold;
+  font-size: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.5;
+  text-align: center;
+  color: $title-color;
+  margin: 0 auto;
+}
+
+@mixin maintitleLine($line-color) {
+  width: 100px;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  background-color: $line-color;
+}

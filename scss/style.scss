@@ -1,0 +1,21 @@
+body {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0px auto;
+  height: 100%;
+}
+@import "./fonts";
+@import "./header";
+@import "./project";
+@import "./news";
+@import "./gallery";
+@import "./contact";
+@import "./footer";

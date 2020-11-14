@@ -1,0 +1,120 @@
+.projects {
+  background: $color__main_white;
+  height: 1532px;
+  position: relative;
+
+  &__line {
+    @include maintitleLine($color__main_dark-blue);
+  }
+
+  &__maintitle {
+    @include maintitle($color__main_dark-blue);
+    margin-top: 100px;
+    margin-bottom: 170px;
+  }
+
+  &__block1 {
+    display: flex;
+    height: 43%;
+  }
+
+  &__block2 {
+    display: flex;
+    height: 43%;
+  }
+
+  &__items1 {
+    width: 540px;
+    height: 470px;
+    padding: 60px 0px 0px 70px;
+  }
+
+  &__items2 {
+    width: 540px;
+    height: 470px;
+    padding: 81px 70px 0px 0px;
+  }
+
+  &__subtitle {
+    font-family: $font_GothamBook;
+    font-size: 22px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @include maintitle($color__main_dark-blue);
+    padding: 15px 0px 20px 0px;
+    text-align: left;
+  }
+
+  &__text {
+    font-family: $font_OpenSans;
+    font-size: 18px;
+    color: $color__main_grey;
+    line-height: 1.67;
+    text-align: left;
+    margin-top: 21px;
+  }
+
+  &__btn {
+    @include button;
+    margin-top: 33px;
+    &:hover {
+      transform: scale(0.95);
+      background-color: $color__main_dark-blue;
+      background-image: none;
+      color: $color__main_white;
+    }
+  }
+
+  &__adres {
+    font-family: $font_OpenSans;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.67;
+    text-align: left;
+    color: $color__main_dark-blue;
+  }
+
+  &__card {
+    z-index: 5;
+    width: 630px;
+    height: 470px;
+  }
+
+  &__card_shadow1 {
+    width: 630px;
+    height: 470px;
+    background-color: $color__main_blue;
+    position: absolute;
+    left: -43px;
+    top: 173px;
+  }
+
+  &__card_shadow2 {
+    width: 630px;
+    height: 470px;
+    background-color: $color__main_violett;
+    position: absolute;
+    right: -35px;
+    bottom: 212px;
+  }
+}
+
+.projects__title_head{
+  margin-top: -24px;
+}
+.row1 {
+  display: flex;
+}
+.row2 {
+  display: flex;
+}
+
+.card1 {
+  background-image: url(../assets/image/progects-image-1.jpg);
+}
+.card2 {
+  background-image: url(../assets/image/progects-image-2.jpg);
+}
